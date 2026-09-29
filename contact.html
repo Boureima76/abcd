@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Découvrez Banfora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-mountain"></i> Découvrez Banfora
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bannière page -->
+    <section class="page-banner">
+        <div class="page-banner-content">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes à votre écoute pour préparer votre séjour</p>
+        </div>
+    </section>
+
+    <!-- Coordonnées -->
+    <section class="section">
+        <h2 class="section-title">Nos Coordonnées</h2>
+        <p class="section-subtitle">Plusieurs moyens de nous joindre</p>
+        
+        <div class="contact-info-grid">
+            <div class="contact-info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Adresse</h3>
+                <p>Avenue de la Comoé<br>Banfora, Région des Cascades<br>Burkina Faso</p>
+            </div>
+            <div class="contact-info-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Téléphone</h3>
+                <p>+226 20 00 00 00<br>+226 70 00 00 00</p>
+            </div>
+            <div class="contact-info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>contact@decouvrezbanfora.bf<br>info@decouvrezbanfora.bf</p>
+            </div>
+            <div class="contact-info-card">
+                <i class="fas fa-clock"></i>
+                <h3>Horaires</h3>
+                <p>Lundi - Vendredi : 8h - 18h<br>Samedi : 9h - 14h</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire -->
+    <section class="section section-alt">
+        <h2 class="section-title">Envoyez-nous un message</h2>
+        <p class="section-subtitle">Nous vous répondrons dans les plus brefs délais</p>
+        
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+            </div>
+            <div class="form-group">
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" name="sujet" required placeholder="Sujet de votre message">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Écrivez votre message ici..."></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer le message</button>
+            <div id="form-message" class="form-message"></div>
+        </form>
+    </section>
+
+    <!-- Carte / Localisation -->
+    <section class="section">
+        <h2 class="section-title">Nous Localiser</h2>
+        <p class="section-subtitle">Banfora, Région des Cascades, Burkina Faso</p>
+        <div class="map-container">
+            <iframe 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-4.8%2C10.6%2C-4.7%2C10.7&amp;layer=mapnik&amp;marker=10.6333%2C-4.7667"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-mountain"></i> Découvrez Banfora</h3>
+                <p>Votre guide touristique pour explorer la perle de l'Ouest du Burkina Faso.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Découvrez Banfora. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

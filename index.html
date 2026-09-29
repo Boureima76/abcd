@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Découvrez Banfora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-mountain"></i> Découvrez Banfora
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue à Banfora</h1>
+            <p>La perle de l'Ouest du Burkina Faso</p>
+            <a href="#destinations" class="btn">Explorer</a>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="section">
+        <h2 class="section-title">Nos Destinations</h2>
+        <p class="section-subtitle">Cliquez sur une destination pour découvrir ses détails</p>
+        
+        <div class="destinations-grid">
+            <!-- Cascades de Banfora -->
+            <div class="destination-card" data-destination="cascades">
+                <img src="image/image2.jpg" alt="Cascades de Banfora">
+                <div class="card-content">
+                    <h3>Cascades de Banfora</h3>
+                    <p>Des chutes d'eau spectaculaires au cœur de la nature</p>
+                    <span class="btn-details">Voir les détails <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Dômes de Fabédougou -->
+            <div class="destination-card" data-destination="domes">
+                <img src="image/image1.jpg" alt="Dômes de Fabédougou">
+                <div class="card-content">
+                    <h3>Dômes de Fabédougou</h3>
+                    <p>Formations rocheuses calcaires uniques au monde</p>
+                    <span class="btn-details">Voir les détails <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Pics de Sindou -->
+            <div class="destination-card" data-destination="sindou">
+                <img src="image/image3.jpg" alt="Pics de Sindou">
+                <div class="card-content">
+                    <h3>Pics de Sindou</h3>
+                    <p>Des formations rocheuses mystérieuses et impressionnantes</p>
+                    <span class="btn-details">Voir les détails <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Détails Destination -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <div class="modal-body">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <ul id="modal-info"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galerie Photos Personnalisée -->
+    <section id="galerie" class="section section-alt">
+        <h2 class="section-title">Galerie Photos</h2>
+        <p class="section-subtitle">Ajoutez vos propres photos en cliquant sur le bouton ci-dessous</p>
+        
+        <div class="gallery-controls">
+            <input type="file" id="photo-input" accept="image/*" multiple hidden>
+            <button class="btn" id="add-photo-btn"><i class="fas fa-plus"></i> Ajouter des photos</button>
+            <button class="btn btn-danger" id="clear-gallery-btn"><i class="fas fa-trash"></i> Tout effacer</button>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600" alt="Paysage Banfora">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=600" alt="Nature Banfora">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600" alt="Cascades">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600" alt="Forêt">
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture -->
+    <section id="culture" class="section">
+        <h2 class="section-title">Culture de Banfora</h2>
+        <div class="culture-content">
+            <div class="culture-text">
+                <h3>Un patrimoine riche et vivant</h3>
+                <p>Banfora est le cœur culturel de la région des Cascades. La ville est habitée principalement par les ethnies <strong>Karaboro</strong>, <strong>Gouin</strong>, <strong>Turka</strong> et <strong>Dioula</strong>, chacune apportant sa richesse culturelle.</p>
+                <p>La région est réputée pour ses traditions musicales, ses danses ancestrales et son artisanat. Le <strong>balafon</strong> et le <strong>djembé</strong> rythment les cérémonies traditionnelles.</p>
+                <div class="culture-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-drum"></i>
+                        <h4>Musique</h4>
+                        <p>Balafon, djembé et chants traditionnels</p>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-mask"></i>
+                        <h4>Danses</h4>
+                        <p>Danses rituelles et festives</p>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-hands"></i>
+                        <h4>Artisanat</h4>
+                        <p>Poteries, tissages et sculptures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gastronomie -->
+    <section id="gastronomie" class="section section-alt">
+        <h2 class="section-title">Gastronomie Locale</h2>
+        <p class="section-subtitle">Découvrez les saveurs authentiques de Banfora</p>
+        
+        <div class="gastronomie-grid">
+            <div class="plat-card">
+                <div class="plat-icon"><i class="fas fa-utensils"></i></div>
+                <h3>Riz Gras</h3>
+                <p>Plat traditionnel à base de riz cuit avec de la viande et des légumes, épicé et savoureux.</p>
+            </div>
+            <div class="plat-card">
+                <div class="plat-icon"><i class="fas fa-seedling"></i></div>
+                <h3>To (Tô)</h3>
+                <p>Pâte de mil, maïs ou sorgho, accompagnée de sauces variées (gombo, arachide, feuilles).</p>
+            </div>
+            <div class="plat-card">
+                <div class="plat-icon"><i class="fas fa-fish"></i></div>
+                <h3>Poisson Capitaine</h3>
+                <p>Poisson frais du fleuve Comoé, grillé ou en sauce, spécialité de la région.</p>
+            </div>
+            <div class="plat-card">
+                <div class="plat-icon"><i class="fas fa-lemon"></i></div>
+                <h3>Mangues & Fruits</h3>
+                <p>Banfora est célèbre pour ses mangues sucrées, ses ananas et ses agrumes.</p>
+            </div>
+            <div class="plat-card">
+                <div class="plat-icon"><i class="fas fa-wine-bottle"></i></div>
+                <h3>Dolo</h3>
+                <p>Bière traditionnelle de mil, brassée localement et partagée lors des rassemblements.</p>
+            </div>
+            <div class="plat-card">
+                <div class="plat-icon"><i class="fas fa-cookie"></i></div>
+                <h3>Beignets & Galettes</h3>
+                <p>Snacks sucrés et salés vendus dans les marchés et au bord des routes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA vers Contact -->
+    <section class="cta-section">
+        <h2>Prêt à découvrir Banfora ?</h2>
+        <p>Contactez-nous pour organiser votre voyage</p>
+        <a href="contact.html" class="btn">Nous contacter</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-mountain"></i> Découvrez Banfora</h3>
+                <p>Votre guide touristique pour explorer la perle de l'Ouest du Burkina Faso.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Découvrez Banfora. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
