@@ -110,7 +110,7 @@ header {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1600') center/cover;
+                url('/images/image2.jpg') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
